@@ -1,7 +1,7 @@
 
 Vue.component('mis-instantaneas', {
   //props: ['users'], OJO NO SE USA PROPS PARA LA VARIABLE YA QUE ESTA EN DATA
-  template: '<div class="row"><ul><li v-for="imagen in instantaneas">{{ imagen.note }}<img :src="imagen.original.url" width="150" heigth="auto"/></li></ul></div>',
+  template: '<div class="row"><ul><li v-for="imagen in instantaneas">{{ imagen.note }}<img :src="imagen.image.original.url" width="150" heigth="auto"/></li></ul></div>',
   mounted(){
       this.cargarImagenes();
   },
