@@ -1,16 +1,13 @@
 
 Vue.component('mis-instantaneas', {
   //props: ['users'], OJO NO SE USA PROPS PARA LA VARIABLE YA QUE ESTA EN DATA
-  template: '<div ="row"><div class="col-md-3" v-for="imagen in instantaneas"><p>{{ imagen.media.note }}</p></div></div>',
+  template: '<div class="row"><div class="col-md-3" v-for="imagen in instantaneas"><p>{{ imagen.media.note }}</p></div></div>',
   mounted(){
       this.cargarImagenes();
   },
   data() {
     return {
-      instantaneas: [],
-      APP_ID: '4878509013838350045',
-      APP_SECRET: 'b5bdfb83802accec1fdcd952393312e5c52231792bd94771d1a218615c859970',
-      ACCESS_TOKEN: 'AW5ls5y28hK63cTAHiUKhvkC1C6UFJ6wx3L7t-VDv8ou6kApeAAAAAA'
+      instantaneas: []
     }
   },
   methods: {
